@@ -28,6 +28,8 @@ static int next_pixel(int slot, int *max_iterations, double *zx, double *zy, dou
     *cy = baton->cy;
     
     baton->called++;
+    
+    return 1;
 }
 
 

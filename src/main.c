@@ -413,7 +413,7 @@ void do_benchmark(OPTIONS *options)
 
     display = SDL_CreateRGBSurface(SDL_SWSURFACE, options->screen_width, options->screen_height, 32, 0, 0, 0, 0);
     
-    buffer = (float *) malloc(sizeof(int) * options->window.width * options->window.height);
+    buffer = (float *) malloc(sizeof(float) * options->window.width * options->window.height);
     if (!buffer)
     {
         fprintf(stderr, "%s:%d: Can't create buffer!", __FILE__, __LINE__);
